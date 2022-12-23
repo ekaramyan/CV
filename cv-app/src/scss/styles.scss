@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+
+@import '_reset';
+
+$dark-bg: #171718;
+$dark-border: #26292D;
+$white: #fff;
+$accent: #5C62EC;
+
+
+header{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1% 5%;
+    align-items: center;
+}
+.header-nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    background: $dark-bg;
+    border-bottom: $dark-border 1px solid;
+}
+body{
+   background: $dark-bg;
+   font-family: 'DM Sans', sans-serif;
+   font-size: 16px;
+}
+.logo{
+    color: $white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.nav{
+    ul{
+        display: flex;
+        gap: 40px;
+        li{
+            cursor: pointer;
+            a{
+                color: $white;
+                text-decoration: none;
+                font-weight: 500;
+                transition: all .3s;
+                &:hover{
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+
+p{
+    color: $white;
+}
+
+
+.main
+{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    &__wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2.5rem;
+    }
+    &__text{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        // row-gap: ;
+        padding: 2% 0;
+        font-weight: 700;
+        line-height: 350%;  
+        text-align: center;
+        letter-spacing: -0.5px;
+        span{
+            color: $accent;
+        }
+        :nth-child(2){
+            font-size: 2em;
+            line-height: 160%;
+        }
+        :nth-child(3){
+            font-size: 1.2em;
+            font-weight: 500;
+            line-height: 150%;
+            padding-top: 2%;
+        }
+        P{
+            font-size: 3.8em;
+        }
+    }
+    &__btn{
+        cursor: pointer;
+        padding: 2% 3%;
+        background: $accent;
+        color: $white;
+        line-height: 1.5em;
+        border-radius: 5px;
+        transition: all .3s;
+        &:hover{
+            opacity:.6;
+        }
+    }
+}
+
+
+
