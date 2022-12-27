@@ -3,12 +3,12 @@ import './scss/styles.scss';
 import Header from './components/Header';
 import Content1 from './components/Content1';
 
-function App() {
+function App(props) {
 
   return (
     <div className="content">
       <Header />
-      <Content1 />
+      <Content1/>
     </div>
   );
 }

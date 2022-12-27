@@ -6,7 +6,7 @@ export default class Content1 extends Component {
             <main className='main'>
                 <div className="main__wrapper">
                     <div className='main__text'>
-                        <p>Hi, my name is <span>Edward</span></p>
+                        <p>Hi, my name is <span>{name}</span></p>
                         <p>a frontend developer</p>
                         <p>with passion to lear and create</p>
                     </div>
