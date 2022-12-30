@@ -5,7 +5,7 @@ const Content1 = (props) => {
         <main className='main'>
             <div className="main__wrapper">
                 <div className='main__text'>
-                    <p>Hi, my name is <span>{name}</span></p>
+                    <p>Hi, my name is <span>{props.name}</span></p>
                     <p>a frontend developer</p>
                     <p>with passion to lear and create</p>
                 </div>
