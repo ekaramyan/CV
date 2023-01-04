@@ -4,11 +4,11 @@ import Header from './components/Header';
 import Content1 from './components/Content1';
 
 function App(props) {
-name = 'Edward';
+
   return (
     <div className="content">
       <Header />
-      <Content1/>
+      <Content1 name = 'Edward'/>
     </div>
   );
 }
