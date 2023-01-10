@@ -79,6 +79,10 @@ select {
     scroll-behavior: smooth !important;
   }
 }
+#root {
+  width: 100%;
+}
+
 header {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -101,6 +105,7 @@ body {
   background: #171718;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
+  max-width: 100vw;
 }
 
 .logo {
@@ -186,12 +191,18 @@ p {
   opacity: 0.6;
 }
 
-.content {
-  width: 100vw;
-}
-
 .btn__container {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.white-bg {
+  background: #e5e5e5;
+  max-width: 100vw;
+  text-align: center;
+}
+.white-bg h2 {
+  color: #5C62EC;
+  font-size: 3rem;
 }
