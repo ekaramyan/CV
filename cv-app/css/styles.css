@@ -206,3 +206,7 @@ p {
   color: #5C62EC;
   font-size: 3rem;
 }
+
+.card p {
+  color: #171718;
+}

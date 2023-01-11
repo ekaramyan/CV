@@ -7,7 +7,7 @@ export default function Projects(props) {
             <div className="white-bg">
                 <h2>{props.title}</h2>
                 <div className="card">
-                    <img src="" alt="" />
+                    <iframe src="https://ekaramyan.github.io/Project-tofix/" frameborder="0" width={900} height={600}></iframe>
                     <p>{props.card_title}</p>
                 </div>
             </div>

@@ -10,7 +10,7 @@ function App(props) {
     <div className="content">
       <Header />
       <Content1 name='Edward' />
-      <Projects title='Projects' />
+      <Projects title='Projects' card_title='fixed first project' />
     </div>
   );
 }
