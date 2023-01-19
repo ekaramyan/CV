@@ -1,6 +1,6 @@
 import React from 'react'
 import p1 from '../img/p1.png'
-
+import { Link } from 'react-router-dom'
 
 export default function Projects(props) {
     return (
