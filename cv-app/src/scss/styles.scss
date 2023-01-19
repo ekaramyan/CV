@@ -144,6 +144,11 @@ p{
     }
 }
 .card{
+    padding: 2% 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     p{
         color: $dark-bg;
     }
