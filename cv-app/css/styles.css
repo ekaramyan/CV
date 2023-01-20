@@ -228,6 +228,6 @@ p {
   transform: scale(1.15);
 }
 .card a:hover img {
-  transform: translate(-10px, -10px) scale(1.05);
-  box-shadow: 10px 5px #5C62EC;
+  transform: translate(-10px, -10px) scale(1.03);
+  box-shadow: 10px 10px #5C62EC;
 }
