@@ -149,10 +149,26 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: .3s;
     p{
         color: $dark-bg;
+        transition: .3s;
     }
     img{
         border-radius: 15px;
+        transition: .3s;
     }
+
+a{
+    &:hover{
+        p{
+            color: $accent;
+            transform: scale(1.15);
+        }
+        img{
+            transform: translate(-10px ,-10px) scale(1.05);
+            box-shadow: 10px 5px $accent;
+        }
+    }
+}
 }
