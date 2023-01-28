@@ -1,28 +1,9 @@
-import axios from 'axios'
-import React from 'react'
-import rest from 'rest'
+import axios from 'axios';
+import React from 'react';
+import useOctokit from '../hooks/useOctokit';
 async function GitImport() {
 
-
-
-  axios.get('')
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    })
-    .then(function () {
-    });
-
-  try {
-    const response = await axios.get('');
-    console.log(response);
-  } catch (error) {
-    console.error(error);
-  }
-
-  XMLHttpRequest
+  useOctokit();
 
 }
 

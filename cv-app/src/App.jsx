@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './scss/styles.scss';
 import Header from './components/Header';
 import Content1 from './components/Content1';
-import Projects from './pages/Projects'
+import Projects from './pages/Projects';
+import GitImport from './API/GitImport';
 
 function App(props) {
 
