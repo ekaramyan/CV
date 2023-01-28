@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React from 'react'
 import rest from 'rest'
-// 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 github token
 async function GitImport() {
 
 
@@ -22,6 +21,8 @@ async function GitImport() {
   } catch (error) {
     console.error(error);
   }
+
+  XMLHttpRequest
 
 }
 

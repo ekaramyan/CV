@@ -1,5 +1,5 @@
-import { Octokit } from "@octokit/rest"  
-export const octokit = new Octokit({     
-     auth: "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",    
-     userAgent: 'skylight v1' 
+import { Octokit } from "@octokit/rest"
+export const octokit = new Octokit({
+     auth: process.env.REACT_APP_GH,
+     userAgent: 'ekaramyan'
 });
