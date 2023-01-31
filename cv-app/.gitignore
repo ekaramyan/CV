@@ -25,3 +25,6 @@ dist-ssr
 
 #encrypted files
 .env
+
+#just useless
+css

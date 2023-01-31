@@ -9,7 +9,7 @@ export default function useOctokit(path) {
             await octokit.request(
                 `GET /repos/{owner}/{repo}/contents/{path}`, {
                 owner: 'ekaramyan',
-                repo: 'components',
+                repo: 'project-tofix',
                 path: `src/lib/components/${path}`
             })
                 .then(res => console.log(res)
