@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { octokit } from '../API/Octokit';
 
-export default function useOctokit(path) {
+export default function useOctokit(path) 
+{
     const [code, setCode] = useState(null);
 
     useEffect(() => {
