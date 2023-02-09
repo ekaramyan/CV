@@ -1,24 +1,23 @@
 import React from 'react'
-import p1 from '../img/p1.png'
+import ProjectItem from '../components/ProjectItem';
 
-export default function Projects(repos) {
+export default function Projects({ repos = [] }) {
 
-    const project_link = {repos}; //заглушка
+    console.log(repos)
+
     return (
         <>
             <div className="white-bg">
-
-               { repos.map()
-               //<h2>{repos.title}</h2>
-                // <div className="card">
-                //     <a href={project_link} target='_blank'>
-                //         <img src={repos} width={400}></img>
-                //         <p>{repos.card_title}</p>
-                //     </a>
-                // </div>
-               
+                {
+                    repos
+                        .map((repo, id, url) => (
+                            <ProjectItem
+                                key={id}
+                                url={url}
+                                repo={repo}
+                            />
+                        ))
                 }
-
             </div>
         </>
     )

@@ -13,7 +13,7 @@ function App() {
   const link = 'https://api.github.com/users/ekaramyan';
   useEffect(() => {
     const repo_get = async () => {
-      const result = await axios.get(link+'/repos'); //calling api
+      const result = await axios.get(link + '/repos'); //calling api
       setRepos(result.data); //setting fetched data
     }
     repo_get() //calling function
@@ -22,13 +22,16 @@ function App() {
 
   console.log(repos)
 
-
+  // console.log(repos.name)
 
   return (
     <div className="content">
       <Header />
       <Content1 name='Edward' />
-      <Projects title='Projects' card_title='fixed first project' />
+      <Projects
+        repos={repos}
+        title={repos.name}
+        card_title='fixed first project' />
     </div>
   );
 }
