@@ -20,7 +20,7 @@ function App() {
       .catch(console.error) //catching errors
   }, []);
 
-  console.log(repos)
+  // console.log(repos)
 
   // console.log(repos.name)
 

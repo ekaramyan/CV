@@ -3,7 +3,7 @@ import ProjectItem from '../components/ProjectItem';
 
 export default function Projects({ repos = [] }) {
 
-    console.log(repos)
+    // console.log(repos)
 
     return (
         <>

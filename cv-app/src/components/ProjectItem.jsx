@@ -8,11 +8,11 @@ const ProjectItem = ({ repo }) => {
     if (!repo) {
         return null
     }
-    console.log(repo.owner.avatar_url)
+    // console.log(repo.language)
     return (
 
         <div className="repoItem">
-            <h2>{repo.name}</h2>
+            <h2>{repo.language}</h2>
             <div className="card">
                 <a href={repo.svn_url} target='_blank'>
                     <img src={repo.owner.avatar_url} width={400}></img>
