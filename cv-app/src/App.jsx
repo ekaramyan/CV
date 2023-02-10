@@ -20,9 +20,6 @@ function App() {
       .catch(console.error) //catching errors
   }, []);
 
-  // console.log(repos)
-
-  // console.log(repos.name)
 
   return (
     <div className="content">
@@ -31,7 +28,7 @@ function App() {
       <Projects
         repos={repos}
         title={repos.name}
-        card_title='fixed first project' />
+      />
     </div>
   );
 }
