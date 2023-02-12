@@ -6,7 +6,8 @@ export default function Projects({ repos = [] }) {
     // console.log(repos)
 
     return (
-        <>
+        <div className='projects-wrapper'>
+            <h1>Projects</h1>
             <div className="white-bg">
                 {
                     repos
@@ -19,6 +20,6 @@ export default function Projects({ repos = [] }) {
                         ))
                 }
             </div>
-        </>
+        </div>
     )
 }

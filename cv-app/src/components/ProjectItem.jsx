@@ -12,6 +12,7 @@ const ProjectItem = ({ repo }) => {
     return (
 
         <div className="repoItem">
+
             <h2>{repo.language}</h2>
             <div className="card">
                 <a href={repo.svn_url} target='_blank'>
