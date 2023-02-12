@@ -41,6 +41,7 @@ body{
     font-weight: 700;
     text-decoration: none;
     font-size: 1.5em;
+    transition: all .3s;
 }
 
 .nav{
@@ -64,6 +65,7 @@ body{
 
 p{
     color: $white;
+    text-decoration: none;
 }
 
 
@@ -124,10 +126,6 @@ p{
         }
     }
 }
-.content
-{
-
-}
 
 .btn__container{
     display: flex;
@@ -160,13 +158,11 @@ p{
     align-content: center;
     h2{
         color: $accent;
-        font-size: 3rem;
-        height: 3rem;
-        margin: 4% 1%;
+        font-size: 2.5rem;
+        height: 2.5rem;
+        margin: 4% 0%;
     }
 }
-
-.repoItem
 
 .card {
     padding: 2% 3%;
@@ -185,6 +181,7 @@ p{
     }
 
 a{
+    text-decoration: none;
     &:hover{
         p{
             color: $accent;

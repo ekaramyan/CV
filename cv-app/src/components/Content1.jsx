@@ -12,7 +12,7 @@ const Content1 = (props) => {
                 <a className='btn__container'
                     href="https://docs.google.com/document/u/1/export?format=pdf&id=1ETQgt0fEBYm2fk6x1Pttcn-IeC0ujA7M&token=AC4w5Vjvws9M3RBUyDPSXnC6VsLTIRVXLw%3A1675099358019&includes_info_params=true&cros_files=false"
                     download="CV">
-                        
+
                     <button className='main__btn'>Download CV</button>
                 </a>
             </div>
