@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
 
-@import '_reset';
+
 
 $dark-bg: #171718;
 $dark-border: #26292D;
@@ -12,6 +12,8 @@ $white-bg: #e5e5e5;
 #root{
     width: 100%;
 }
+
+
 
 header{
     font-family: 'Poppins', sans-serif;
@@ -171,6 +173,7 @@ a{
     padding: 2% 3%;
     width: 100%;
     display: flex;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
     transition: .3s;
@@ -179,6 +182,10 @@ a{
         transition: .3s;
     }
     img{
+        justify-content: center;
+        width: 410px;
+        height: 300px;
+        object-fit: cover;
         border-radius: 15px;
         transition: .3s;
     }
@@ -197,3 +204,4 @@ a{
     }
 }
 }
+@import '_reset';
