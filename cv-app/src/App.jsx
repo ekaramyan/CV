@@ -21,6 +21,16 @@ function App() {
   }, []);
 
 
+  // const [imgs, setImgs] = useState([]);
+  // const url = 'https://api.screenshotone.com/take?';
+
+  // const imgGET = axios.get(url)
+
+
+
+  // console.log(imgGET)
+
+
   return (
     <div className="content">
       <Header />
@@ -28,6 +38,7 @@ function App() {
       <Projects
         repos={repos}
         title={repos.name}
+        // imgs={imgs}
       />
     </div>
   );

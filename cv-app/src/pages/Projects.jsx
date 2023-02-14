@@ -1,9 +1,10 @@
 import React from 'react'
 import ProjectItem from '../components/ProjectItem';
 
-export default function Projects({ repos = [] }) {
+export default function Projects({ repos = [], imgs = [] }) {
 
     // console.log(repos)
+    
 
     return (
         <div className='projects-wrapper'>
@@ -19,6 +20,15 @@ export default function Projects({ repos = [] }) {
                             />
                         ))
                 }
+
+                {/* {
+                    imgs.map((img, id) => (
+                        <ProjectItem
+                            key={id}
+                            img={img}
+                        />
+                    ))
+                } */}
             </div>
         </div>
     )
