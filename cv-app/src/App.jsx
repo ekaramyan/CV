@@ -20,11 +20,13 @@ function App() {
       .catch(console.error) //catching errors
   }, []);
 
+
   return (
     <div className="content">
       <Header />
       <Content1 name='Edward' />
       <Projects
+        pageTitle={'Projects'}
         repos={repos}
         title={repos.name}
       />

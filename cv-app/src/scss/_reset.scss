@@ -54,6 +54,10 @@ img {
   display: block;
 }
 
+button{
+  border: none;
+}
+
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
   margin-top: 1em;

@@ -13,7 +13,7 @@ const ProjectItem = ({ repo }) => {
     const screenshotKey = import.meta.env.VITE_SCREENSHOT_KEY;
 
     if (repo.has_pages) {
-        img = `${url}url=https://${repo.owner.login}.github.io/${repo.name}&access_key=${screenshotKey}`
+        // img = `${url}url=https://${repo.owner.login}.github.io/${repo.name}&access_key=${screenshotKey}`
     }
     else {
         img = repo.owner.avatar_url

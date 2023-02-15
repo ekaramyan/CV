@@ -1,11 +1,11 @@
 import React from 'react'
 import ProjectItem from '../components/ProjectItem';
 
-export default function Projects({ repos = []}) {
+export default function Projects({ repos = [], pageTitle }) {
 
     return (
         <div className='projects-wrapper' id='projects'>
-            <h1>Projects</h1>
+            <h1>{pageTitle}</h1>
             <div className="white-bg">
                 {
                     repos
