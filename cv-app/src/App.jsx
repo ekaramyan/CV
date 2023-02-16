@@ -5,6 +5,8 @@ import './scss/styles.scss';
 import Header from './components/Header';
 import Content1 from './components/Content1';
 import Projects from './pages/Projects';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import InfoContainer from './containers/InfoContainer';
 
 function App() {
 
@@ -23,13 +25,37 @@ function App() {
 
   return (
     <div className="content">
-      <Header />
-      <Content1 name='Edward' />
-      <Projects
-        pageTitle={'Projects'}
-        repos={repos}
-        title={repos.name}
-      />
+      <BrowserRouter>
+        <Header />
+        <Content1 name='Edward' />
+
+        <Routes>
+
+          <Route path='/skills' element={<InfoContainer
+            id={0}
+            pageName={'Skills'}
+            header={'Frontend'}
+            text={'JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, SCSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS, Vite'}
+          />} />
+
+          <Route path='/contacts' element={<InfoContainer
+            id={0}
+            pageName={'Contacts'}
+            header={['Location', 'Telegram']}
+            text={'Ukraine or Armenia'}
+          />} />
+
+          <Route exact path='/' element={<Projects
+            pageTitle={'Projects'}
+            repos={repos}
+            title={repos.name}
+          />}
+          />
+
+        </Routes>
+
+      </BrowserRouter>
+
     </div>
   );
 }

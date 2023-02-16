@@ -16,7 +16,7 @@
     "octokit": "^2.0.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.1",
+    "react-router-dom": "^6.8.1",
     "rest": "^2.0.0",
     "rest-api": "^0.0.0",
     "sass": "^1.57.1"

@@ -52,12 +52,10 @@ body{
 }
 
 .nav{
-    ul{
         display: flex;
         gap: 40px;
-        li{
+        .menu__item{
             cursor: pointer;
-            a{
                 color: $white;
                 text-decoration: none;
                 font-weight: 500;
@@ -67,8 +65,7 @@ body{
                 }
             }
         }
-    }
-}
+
 
 p{
     color: $white;
@@ -83,6 +80,7 @@ a{
 {
     display: flex;
     height: 100vh;
+    min-height: 720px;
     max-width: 100vw;
     width: 100%;
     justify-content: center;
@@ -143,13 +141,14 @@ a{
 }
 
 .projects-wrapper{
+    padding-top: 4.5rem;
     background: $white-bg;
     text-align: center;
     h1{
         color: $accent;
         font-size: 4rem;
         height: 4rem;
-        margin: 1% 0%; 
+        margin-bottom: 3.5rem; 
     }
 
 }
@@ -158,19 +157,36 @@ a{
 {
     background: $white-bg;
     max-width: 100vw;
-    min-height: 100vh;
+    min-height: 70vh;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: flex-start;
     h2{
         color: $accent;
         font-size: 2.5rem;
         height: 2.5rem;
         margin: 4% 0%;
     }
+    h3{
+        color: $dark-bg;
+        font-size: 2rem;
+    }
+    p{
+        color:#171718;
+        font-size: 1rem;
+    }
+}
+.infolist{
+max-width: 40%;
+gap:1.25rem;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+margin-bottom: 2.5rem;
 }
 
 .card {
@@ -207,4 +223,5 @@ a{
         }
     }
 }
+
 }

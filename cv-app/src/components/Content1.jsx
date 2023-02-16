@@ -2,7 +2,7 @@ import React from 'react'
 
 const Content1 = (props) => {
     return (
-        <main className='main'>
+        <main className='main' id='start'>
             <div className="main__wrapper">
                 <div className='main__text'>
                     <p>Hi, my name is <span>{props.name}</span></p>
