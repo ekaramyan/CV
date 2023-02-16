@@ -5,6 +5,7 @@ const ProjectItem = ({ repo }) => {
     if (!repo) {
         return null
     }
+    console.log(repo)
 
     const url = 'https://api.screenshotone.com/take?';
     let img = ``

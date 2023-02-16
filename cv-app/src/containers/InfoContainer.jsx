@@ -1,24 +1,41 @@
 import React from 'react'
 import InfoList from '../components/InfoList'
 
-const InfoContainer = ({ pageName, header = [], text, id }) => {
-  let i = 0
+const InfoContainer = ({ skills = [], contacts = [], pageName }) => {
 
-  for (i; i > header.length; i++) {
-    console.log(i)
+  if (!contacts) {
+    return null
   }
+  if (!skills) {
+    return null
+  }
+
 
 
   return (
     <div className='projects-wrapper'>
       <h1>{pageName}</h1>
-      <div className='white-bg'>
-        {header.map(() => (
-          <InfoList
-            key={id}
-            header={header[i]}
-            text={text} />
-        ))}
+      <div className='white-bg' style={{ flexDirection: 'column' }}>
+        {
+          skills.map
+            (({ id, header, text }) => (
+              <InfoList
+                key={id}
+                header={header}
+                text={text}
+              />
+            ))
+        }
+        {
+          contacts.map
+            (({ id, header, text }) => (
+              <InfoList
+                key={id}
+                header={header}
+                text={text}
+              />
+            ))
+        }
       </div>
 
     </div>

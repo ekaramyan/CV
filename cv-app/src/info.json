@@ -1,0 +1,31 @@
+{
+    "contacts": [
+        {
+            "id": 0,
+            "header": "Location",
+            "text": "Ukraine, Armenia"
+        },
+        {
+            "id": 1,
+            "header": "Telegram",
+            "text": "+380502217366"
+        },
+        {
+            "id": 2,
+            "header": "Email",
+            "text": "ekaramyan@gmail.com"
+        }
+    ],
+    "skills": [
+        {
+            "id": 3,
+            "header": "Frontend",
+            "text": "JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, SCSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS, Vite"
+        },
+        {
+            "id": 4,
+            "header": "Backend",
+            "text": "MySQL, phpMyAdmin"
+        }
+    ]
+}

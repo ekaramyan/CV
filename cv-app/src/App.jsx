@@ -7,6 +7,7 @@ import Content1 from './components/Content1';
 import Projects from './pages/Projects';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import InfoContainer from './containers/InfoContainer';
+import info from './info.json';
 
 function App() {
 
@@ -23,6 +24,12 @@ function App() {
   }, []);
 
 
+  const [contacts, setContacts] = useState([])
+  useEffect(() => {
+    setContacts(info.contacts)
+  }, [])
+  const skills = info.skills
+
   return (
     <div className="content">
       <BrowserRouter>
@@ -32,17 +39,17 @@ function App() {
         <Routes>
 
           <Route path='/skills' element={<InfoContainer
-            id={0}
             pageName={'Skills'}
-            header={'Frontend'}
-            text={'JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, SCSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS, Vite'}
+            skills={skills}
+          // header={skills.header}
+          // text={skills.text}
           />} />
 
           <Route path='/contacts' element={<InfoContainer
-            id={0}
             pageName={'Contacts'}
-            header={['Location', 'Telegram']}
-            text={'Ukraine or Armenia'}
+            contacts={contacts}
+          // header={contacts.header}
+          // text={contacts.text}
           />} />
 
           <Route exact path='/' element={<Projects
