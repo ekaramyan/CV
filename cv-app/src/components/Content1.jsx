@@ -10,7 +10,7 @@ const Content1 = (props) => {
                     <p>with passion to learn and create</p>
                 </div>
                 <a className='btn__container'
-                    href="https://docs.google.com/document/u/1/export?format=pdf&id=1ETQgt0fEBYm2fk6x1Pttcn-IeC0ujA7M&token=AC4w5Vjvws9M3RBUyDPSXnC6VsLTIRVXLw%3A1675099358019&includes_info_params=true&cros_files=false"
+                    href="https://docs.google.com/document/u/1/export?format=pdf&id=1AOb_Ge5almuXs9xVI0xuHTPh2zn1D_ht&token=AC4w5VjbvaShQIEeB6AzGdvnxveuJqiv6A%3A1681491335686&includes_info_params=true&cros_files=false"
                     download="CV">
 
                     <button className='main__btn'>Download CV</button>
